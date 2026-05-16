@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Model & data artefacts (too big for git)
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.gguf
+checkpoints/
+hf_cache/
+datasets_cache/
+wandb/
+mlruns/
+
+# Slurm / logs
+*.out
+*.err
+slurm-*.out
+logs/
+
+# Results (keep summary files, ignore bulky raw logs)
+results/raw/
+results/**/*.json.gz
+results/**/*.parquet
+
+# Container build artefacts
+*.sif
+*.tar
+*.tar.gz
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
