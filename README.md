@@ -1,6 +1,6 @@
-# Nebius Take-Home — AI/ML Specialist Customer Solution Architect
+# hpc-llm-bench
 
-End-to-end PoC on a 2-node × 8×H200 Slurm cluster: validate the cluster, fine-tune an open-source LLM on MMLU, and demonstrate measurable accuracy improvement plus an inference-perf optimization.
+Reference workflow for end-to-end LLM fine-tuning and inference benchmarking on a multi-node Slurm + Pyxis GPU cluster. Built as a Nebius take-home exercise (AI/ML Specialist Customer Solution Architect role); designed to be a reusable starting point for similar PoCs.
 
 ## Assignment summary
 
