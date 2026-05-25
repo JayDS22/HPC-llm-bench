@@ -1,0 +1,24 @@
+# Tiny smoke-test config: 1 GPU, 10 steps. Validates the full pipeline (model
+# load, dataset load, chat template, FSDP / single-GPU shapes, optimizer,
+# checkpoint save) in ~5 minutes before paying for a multi-node allocation.
+
+model: Qwen/Qwen2.5-7B-Instruct
+dataset_path: /mnt/data/jg/datasets/mmlu_sft.jsonl
+output_dir: /mnt/data/jg/checkpoints/qwen25-7b-smoke
+
+epochs: 1
+max_steps: 10
+per_device_batch: 1
+grad_accum: 1
+lr: 2.0e-5
+max_seq_length: 512
+grad_checkpointing: true
+
+logging_steps: 1
+save_steps: 1000000      # don't save during smoke
+save_total_limit: 1
+
+packing: false
+optim: adamw_torch_fused
+seed: 42
+dataloader_num_workers: 2
