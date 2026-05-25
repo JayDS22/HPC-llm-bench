@@ -1,0 +1,13 @@
+{
+  "rank": 3,
+  "node": "worker-1",
+  "cuda_visible_devices": "0",
+  "gpu_name": "NVIDIA H200",
+  "result": {
+    "matmul_size": 8192,
+    "dtype": "bfloat16",
+    "iters": 20,
+    "time_per_iter_s": 0.001372293452732265,
+    "tflops": 801.2219438829569
+  }
+}

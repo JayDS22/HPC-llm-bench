@@ -1,0 +1,11 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "hf_home": "",
+  "num_sentences": 16,
+  "embedding_dim": 384,
+  "timings_s": {
+    "import_s": 5.031928331125528,
+    "load_s": 2.0967613398097456,
+    "encode_s": 0.24018605379387736
+  }
+}

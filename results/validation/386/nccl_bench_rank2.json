@@ -1,0 +1,31 @@
+{
+  "rank": 2,
+  "world_size": 4,
+  "node": "worker-1",
+  "results": [
+    {
+      "size_bytes": 8388608,
+      "size_mib": 8.0,
+      "time_per_iter_s": 0.00018300882074981928,
+      "bus_bandwidth_gbps": 68.75576788291187
+    },
+    {
+      "size_bytes": 67108864,
+      "size_mib": 64.0,
+      "time_per_iter_s": 0.001136884093284607,
+      "bus_bandwidth_gbps": 88.54314753333435
+    },
+    {
+      "size_bytes": 268435456,
+      "size_mib": 256.0,
+      "time_per_iter_s": 0.004215439292602241,
+      "bus_bandwidth_gbps": 95.51867695180054
+    },
+    {
+      "size_bytes": 1073741824,
+      "size_mib": 1024.0,
+      "time_per_iter_s": 0.01181787890382111,
+      "bus_bandwidth_gbps": 136.2861093016646
+    }
+  ]
+}

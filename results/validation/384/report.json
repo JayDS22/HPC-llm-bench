@@ -1,0 +1,56 @@
+{
+  "checks": {
+    "gpu_info": {
+      "pass": true,
+      "n_gpus_visible": 2,
+      "first_gpu": {
+        "index": 0,
+        "name": "NVIDIA H200",
+        "driver": "570.211.01",
+        "memory_total_mib": 143771,
+        "memory_free_mib": 143167,
+        "compute_mode": "Default",
+        "uuid": "GPU-e052255b-8881-5264-eff8-e6d233162d4f",
+        "pstate": "P0"
+      }
+    },
+    "gpu_compute": {
+      "pass": false,
+      "n_ranks": 4,
+      "tflops_min": 355.97091037821804,
+      "tflops_mean": 585.815809697471,
+      "tflops_max": 810.0896474013888,
+      "tflops_threshold": 400.0,
+      "per_rank": [
+        {
+          "rank": 0,
+          "node": "worker-0",
+          "tflops": 799.0849111361398
+        },
+        {
+          "rank": 1,
+          "node": "worker-0",
+          "tflops": 810.0896474013888
+        },
+        {
+          "rank": 2,
+          "node": "worker-1",
+          "tflops": 378.11776987413725
+        },
+        {
+          "rank": 3,
+          "node": "worker-1",
+          "tflops": 355.97091037821804
+        }
+      ]
+    },
+    "hf_smoke": {
+      "pass": true,
+      "load_s": 4.7792740180157125,
+      "encode_s": 0.2503162929788232,
+      "threshold_s": 60.0,
+      "embedding_dim": 384
+    }
+  },
+  "overall_pass": false
+}

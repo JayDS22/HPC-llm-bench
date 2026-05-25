@@ -1,0 +1,88 @@
+{
+  "checks": {
+    "gpu_info": {
+      "pass": true,
+      "n_gpus_visible": 2,
+      "first_gpu": {
+        "index": 0,
+        "name": "NVIDIA H200",
+        "driver": "570.211.01",
+        "memory_total_mib": 143771,
+        "memory_free_mib": 143167,
+        "compute_mode": "Default",
+        "uuid": "GPU-e052255b-8881-5264-eff8-e6d233162d4f",
+        "pstate": "P0"
+      }
+    },
+    "gpu_compute": {
+      "pass": true,
+      "n_ranks": 4,
+      "tflops_min": 799.4348124488386,
+      "tflops_mean": 806.2023421032835,
+      "tflops_max": 816.4128928716098,
+      "tflops_threshold": 600.0,
+      "per_rank": [
+        {
+          "rank": 0,
+          "node": "worker-0",
+          "tflops": 800.4909301550001
+        },
+        {
+          "rank": 1,
+          "node": "worker-0",
+          "tflops": 799.4348124488386
+        },
+        {
+          "rank": 2,
+          "node": "worker-1",
+          "tflops": 816.4128928716098
+        },
+        {
+          "rank": 3,
+          "node": "worker-1",
+          "tflops": 808.4707329376856
+        }
+      ]
+    },
+    "nccl_bench": {
+      "pass": true,
+      "world_size": 4,
+      "peak_busbw_gbps": 136.20504544297285,
+      "threshold_gbps": 50.0,
+      "sweep": [
+        {
+          "size_bytes": 8388608,
+          "size_mib": 8.0,
+          "time_per_iter_s": 0.00018216546159237622,
+          "bus_bandwidth_gbps": 69.07408182653327
+        },
+        {
+          "size_bytes": 67108864,
+          "size_mib": 64.0,
+          "time_per_iter_s": 0.00113413839135319,
+          "bus_bandwidth_gbps": 88.75750681527872
+        },
+        {
+          "size_bytes": 268435456,
+          "size_mib": 256.0,
+          "time_per_iter_s": 0.004214450041763485,
+          "bus_bandwidth_gbps": 95.54109789174645
+        },
+        {
+          "size_bytes": 1073741824,
+          "size_mib": 1024.0,
+          "time_per_iter_s": 0.011824912438169122,
+          "bus_bandwidth_gbps": 136.20504544297285
+        }
+      ]
+    },
+    "hf_smoke": {
+      "pass": true,
+      "load_s": 2.0967613398097456,
+      "encode_s": 0.24018605379387736,
+      "threshold_s": 60.0,
+      "embedding_dim": 384
+    }
+  },
+  "overall_pass": true
+}

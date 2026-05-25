@@ -1,0 +1,14 @@
+{
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA H200",
+      "driver": "570.211.01",
+      "memory_total_mib": 143771,
+      "memory_free_mib": 143167,
+      "compute_mode": "Default",
+      "uuid": "GPU-e052255b-8881-5264-eff8-e6d233162d4f",
+      "pstate": "P0"
+    }
+  ]
+}
