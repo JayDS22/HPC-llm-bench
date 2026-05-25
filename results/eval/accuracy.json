@@ -1,0 +1,34 @@
+{
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "sft_model": "/mnt/data/jg/checkpoints/qwen25-7b-mmlu-sft-merged",
+  "rows": [
+    {
+      "task": "mmlu_college_biology",
+      "base_acc": 0.8402777777777778,
+      "sft_acc": 0.8611111111111112,
+      "delta_pp": 2.083333333333337,
+      "is_target": false
+    },
+    {
+      "task": "mmlu_high_school_mathematics",
+      "base_acc": 0.42962962962962964,
+      "sft_acc": 0.562962962962963,
+      "delta_pp": 13.333333333333336,
+      "is_target": true
+    },
+    {
+      "task": "mmlu_high_school_us_history",
+      "base_acc": 0.8823529411764706,
+      "sft_acc": 0.8725490196078431,
+      "delta_pp": -0.9803921568627416,
+      "is_target": false
+    },
+    {
+      "task": "mmlu_world_religions",
+      "base_acc": 0.8713450292397661,
+      "sft_acc": 0.8538011695906432,
+      "delta_pp": -1.7543859649122862,
+      "is_target": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "engine": "vllm",
+  "model": "/mnt/data/jg/checkpoints/qwen25-7b-mmlu-sft-merged",
+  "tensor_parallel_size": 2,
+  "max_num_seqs": 256,
+  "kv_cache_dtype": "auto",
+  "n_prompts": 270,
+  "max_new_tokens": 128,
+  "total_s": 0.5350645482540131,
+  "requests_per_s": 504.61201528123286,
+  "prompt_tokens_per_s": 57221.133599501874,
+  "generated_tokens_per_s": 1009.2240305624657,
+  "latency_p50_s": 0.0019817205490889373,
+  "latency_p95_s": 0.0019817205490889373
+}

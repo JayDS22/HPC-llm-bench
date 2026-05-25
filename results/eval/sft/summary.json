@@ -1,0 +1,22 @@
+{
+  "label": "sft",
+  "model": "/mnt/data/jg/checkpoints/qwen25-7b-mmlu-sft-merged",
+  "tasks": {
+    "mmlu_college_biology": {
+      "acc": 0.8611111111111112,
+      "acc_stderr": 0.0289198029561349
+    },
+    "mmlu_high_school_mathematics": {
+      "acc": 0.562962962962963,
+      "acc_stderr": 0.03024286239765401
+    },
+    "mmlu_high_school_us_history": {
+      "acc": 0.8725490196078431,
+      "acc_stderr": 0.02340553048084631
+    },
+    "mmlu_world_religions": {
+      "acc": 0.8538011695906432,
+      "acc_stderr": 0.027097290118070785
+    }
+  }
+}

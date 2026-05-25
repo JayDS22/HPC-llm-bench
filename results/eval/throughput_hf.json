@@ -1,0 +1,14 @@
+{
+  "engine": "transformers.generate",
+  "model": "/mnt/data/jg/checkpoints/qwen25-7b-mmlu-sft-merged",
+  "batch_size": 8,
+  "n_prompts": 270,
+  "max_new_tokens": 128,
+  "total_s": 1.9373232922516763,
+  "requests_per_s": 139.36754958754943,
+  "prompt_tokens_per_s": 15803.763947118521,
+  "generated_tokens_per_s": 278.73509917509887,
+  "latency_p50_s": 0.006938071397598833,
+  "latency_p95_s": 0.00821919902227819,
+  "peak_gpu_mem_gib": 14.5964035987854
+}

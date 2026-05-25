@@ -1,0 +1,22 @@
+{
+  "label": "base",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "tasks": {
+    "mmlu_college_biology": {
+      "acc": 0.8402777777777778,
+      "acc_stderr": 0.030635578972093274
+    },
+    "mmlu_high_school_mathematics": {
+      "acc": 0.42962962962962964,
+      "acc_stderr": 0.030182099804387262
+    },
+    "mmlu_high_school_us_history": {
+      "acc": 0.8823529411764706,
+      "acc_stderr": 0.022613286601132015
+    },
+    "mmlu_world_religions": {
+      "acc": 0.8713450292397661,
+      "acc_stderr": 0.025679342723276936
+    }
+  }
+}
